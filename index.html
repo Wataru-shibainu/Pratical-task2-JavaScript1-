@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
+    <title>ストップウォッチ</title>
+</head>
+
+<body>
+    <h3>ストップウォッチ</h3>
+
+    <div class="measuredvalue">
+        <p id="hundredPlace">0</p>
+        <p>:</p>
+        <p id="tenPlace">0</p>
+        <p>:</p>
+        <p id="onePlace">0</p>
+        <p>:</p>
+        <p id="oneDecimalPlace">0</p>
+    </div>
+
+    <button id="start" onclick=eventStart()>スタート</button>
+    <button id="stop" onclick=eventStop() disabled=true>ストップ</button>
+    <button id="reset" onclick=eventReset() disabled=true>リセット</button>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
